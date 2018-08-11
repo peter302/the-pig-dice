@@ -1,0 +1,42 @@
+body {
+background-color: #17b236;;
+
+}
+
+.jumbotron {
+  color:white;
+  background-color: #405472;
+  background: rgb(64, 84, 114);
+  border: 3px solid;
+}
+
+img {
+  margin-top: 10px;
+  float: right;
+}
+
+#x1{
+  background-color: green;
+  border: 2px solid yellow;
+}
+
+#x2{
+  background-color:#14ba9b;
+  background: rgb(20, 186, 155);
+  border: 2px solid green;
+}
+.footer{
+  margin-top: 100px;
+  height: 100px;
+  margin-left: -90px;
+  text-align: center;
+  margin-right: -90px;
+  color: white;
+  font-size: 30px;
+  background-image: url("dice.jpeg");
+  background-size: cover;
+}
+#pigForm{
+  background-color: #d8681e;
+  background: rgb(216, 104, 30);
+}

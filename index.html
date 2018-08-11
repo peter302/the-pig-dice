@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pig Dice</title>
+  <link  href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/pig.css" rel="stylesheet">
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="js/pig.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="jumbotron style='background-color:#1b302c;border: 2px solid green;'">
+    <h style="font-size:40px;">Welcome To Pig Dice.Its an Awsome Game.You will like it.</h>
+      <br>
+      <br>
+      <p>Guidlines:</p>
+      <p>when you hit the roll button,a number is picked randomly and added to your totalscore as long as,<br>
+        that number is not one.If the number picked is one,the score for that turn is zero but total score<br>
+        is retained.your board is deactivated and system switch to the next player.<p><br>
+          you can also decide to hold,still you wont lose your scores.Your total score is maintained.
+        </div>
+      </div>
+      <div class="row">
+      <div class="jumbotron">
+        <h1>come on lets Play Pig Dice!!</h1>
+
+
+      <form id="pigForm" class="form-group" action="index.html" method="post">
+        <h>Enter the name of the two players below<h><br>
+        <div class="ome">
+          <label class="player-group">Player1</label>
+          <input id="name1" type="text">
+        </div>
+        <div class="two">
+          <label>Player2</label>
+          <input id="name2" type="text">
+        </div>
+        <button class="player-group btn-success" name="button">Submit</button>
+      </form>
+    </div>
+  </div>
+      <br>
+
+
+        <div class="row">
+        <div class="col-md-5" id="x1">
+          <h1><span id="attach1"></span>'s Score: <span class="player1Score">0</span></h1>
+          <div id="area1">
+          <h2>Player 1 turn</h2>
+          <h2>score for this turn: <span id="turn"></span></h2>
+          <h2>total score: <span id="result"></span></h2>
+
+          <button type="button" class="btn btn-warning btn-lg roll">roll1 please</button>
+          <button type="button" class="btn btn-primary btn-lg hold">Stop roll 1 and hold please.</button>
+          </div>
+        </div>
+
+        <div class="col-md-5 offset-2" id="x2">
+          <h1><span id="attach2"></span>'s Score: <span class="player2Score">0</span></h1>
+          <div id="area2">
+          <h2>Player 2 Turn</h2>
+
+          <h2>score for this turn: <span id="turn2"></span></h2>
+          <h2>total score: <span id="result2"></span></h2>
+
+
+          <button type="button" class="btn btn-warning btn-lg roll2">roll2pleas</button>
+          <button type="button" class="btn btn-primary btn-lg hold2">Stoproll2 and hold please</button>
+        </div>
+     </div>
+      </div>
+      <div class="footer bg-dark">designed and developed by@peter kuria</div>
+    </div>
+  </body>
+</html>
